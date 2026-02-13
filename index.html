@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestão de Planilhas e Categorias</title>
   <!-- cache-busting simples para sempre carregar o CSS mais recente -->
-  <link rel="stylesheet" href="/style.css?v=2">
+  <!-- Caminho RELATIVO para funcionar no GitHub Pages -->
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -27,7 +28,8 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="logo">
-        <img src="/img/Logo.png" alt="Hospital Odilson Behrens" class="logo-img" onerror="this.style.display='none'">
+        <!-- Caminho RELATIVO para a imagem no GitHub Pages -->
+        <img src="img/Logo.png" alt="Hospital Odilson Behrens" class="logo-img" onerror="this.style.display='none'">
       </div>
       <input class="search" type="text" placeholder="Pesquisa">
       <div class="menu">
@@ -117,13 +119,13 @@
     </main>
   </div>
 
-  <!-- Config de ambiente da API (deixe vazio para usar o mesmo host do back-end Flask local) -->
+  <!-- Config de ambiente da API -->
   <script>
-    // Em produção (GitHub Pages + back-end externo), defina assim, por exemplo:
-    // window.API_BASE_URL = 'https://seu-backend.onrender.com';
+    // Backend publicado no Render
     window.API_BASE_URL = 'https://dashboards-backend-1o4j.onrender.com';
   </script>
   <!-- cache-busting simples para garantir JS atualizado -->
-  <script src="/app.js?v=2"></script>
+  <!-- Caminho RELATIVO para o JS no GitHub Pages -->
+  <script src="app.js?v=2"></script>
 </body>
 </html>
